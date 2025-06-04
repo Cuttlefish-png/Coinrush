@@ -1,0 +1,24 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[forms]]
+  name = "waitlist"
+  [forms.notifications]
+    email = "narayanananurag5@gmail.com"
+    [forms.notifications.email_options]
+      from = "CoinRush Waitlist <noreply@coinrush.com>"
+      subject = "New Waitlist Signup - CoinRush"
+      body = """
+      A new user has joined the CoinRush waitlist!
+
+      Name: {{name}}
+      Email: {{email}}
+
+      View all submissions: https://app.netlify.com/sites/YOUR_SITE_NAME/forms
+      """ 
