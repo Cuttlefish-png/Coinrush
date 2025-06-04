@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import { CheckCircle2, Bitcoin, Feather as Ethereum, Coins, Zap, Shield } from 'lucide-react';
+import React from 'react';
+import { CheckCircle2, Bitcoin, Coins, Zap, Shield } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
-  const [email, setEmail] = useState('');
+  const navigate = useNavigate();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Email submitted:', email);
-    setEmail('');
+  const handleJoinWaitlist = () => {
+    navigate('/waitlist');
   };
 
   return (
@@ -29,24 +28,14 @@ function App() {
               CoinRush lets teens complete simple tasks and earn real Bitcoin, Ethereum, and Solana—no bank, no credit card, just free crypto.
             </p>
 
-            <form onSubmit={handleSubmit} className="max-w-md mx-auto transform hover:scale-105 transition-transform duration-300">
-              <div className="flex flex-col md:flex-row gap-4">
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 px-6 py-3 rounded-lg text-black bg-white/90 backdrop-blur-sm border-2 border-transparent focus:border-neon-purple transition-all duration-300"
-                />
-                <button
-                  type="submit"
-                  className="bg-neon-purple text-white px-8 py-3 rounded-lg font-semibold hover:shadow-neon transition-all duration-300 hover:scale-105"
-                >
-                  Join Now
-                </button>
-              </div>
-            </form>
+            <div className="max-w-md mx-auto transform hover:scale-105 transition-transform duration-300">
+              <button
+                onClick={handleJoinWaitlist}
+                className="w-full bg-neon-purple text-white px-8 py-3 rounded-lg font-semibold hover:shadow-neon transition-all duration-300 hover:scale-105"
+              >
+                Join Waitlist Now
+              </button>
+            </div>
             
             <p className="text-off-white text-sm mt-4 animate-pulse">
               Get early access, bonus points, and a chance to win 5 SOL when we launch.
