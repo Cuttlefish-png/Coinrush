@@ -21,14 +21,11 @@ function Waitlist() {
     setIsSubmitting(true);
 
     try {
+      const formData = new FormData(e.target as HTMLFormElement);
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          'form-name': 'waitlist',
-          ...formData,
-          'notification-email': 'narayanananurag5@gmail.com'
-        }).toString()
+        body: new URLSearchParams(formData as any).toString()
       });
 
       if (response.ok) {

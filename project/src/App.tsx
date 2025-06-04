@@ -25,7 +25,7 @@ function App() {
               Earn Crypto. Race Ahead.
             </h1>
             <p className="text-off-white text-lg md:text-xl max-w-2xl mx-auto mb-12 animate-pulse-slow">
-              CoinRush lets teens complete simple tasks and earn real Bitcoin, Ethereum, and Solana—no bank, no credit card, just free crypto.
+              CoinRush lets anyone complete simple tasks and earn real Bitcoin, Ethereum, and Solana—no bank, no credit card, just free crypto.
             </p>
 
             <div className="max-w-md mx-auto transform hover:scale-105 transition-transform duration-300">
@@ -117,8 +117,8 @@ function App() {
                       <Shield className="w-6 h-6 text-neon-purple" />
                     </div>
                     <div>
-                      <h4 className="text-white font-semibold">Teen-Friendly</h4>
-                      <p className="text-off-white text-sm">Designed specifically for young users</p>
+                      <h4 className="text-white font-semibold">User-Friendly</h4>
+                      <p className="text-off-white text-sm">Designed specifically for everyone</p>
                     </div>
                   </div>
                 </div>
