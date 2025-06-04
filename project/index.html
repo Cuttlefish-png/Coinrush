@@ -9,6 +9,11 @@
   </head>
   <body class="bg-black">
     <div id="root"></div>
+    <form name="waitlist" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="hidden" name="form-name" value="waitlist" />
+    </form>
     <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>
