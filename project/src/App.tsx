@@ -17,7 +17,7 @@ function App() {
         
         <div className="max-w-6xl mx-auto relative">
           <div className="flex justify-center mb-12">
-            <img src="/image.png" alt="CoinRush Logo" className="h-16 md:h-20 float-animation" />
+            <img src="./image.png" alt="CoinRush Logo" className="h-16 md:h-20 float-animation" />
           </div>
           
           <div className="text-center">
