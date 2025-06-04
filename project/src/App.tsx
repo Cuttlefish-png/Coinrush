@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, Bitcoin, Coins, Zap, Shield } from 'lucide-react';
+import { CheckCircle2, Bitcoin, Coins, Zap, Shield, Sparkles, Gamepad2, Lock } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 function App() {
@@ -38,8 +38,92 @@ function App() {
             </div>
             
             <p className="text-off-white text-sm mt-4 animate-pulse">
-              Get early access, bonus points, and a chance to win 5 SOL when we launch.
+              Get early access, bonus points, and a chance to win 1 SOL for free when we launch.
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Benefits Section */}
+      <div className="bg-black py-20 px-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJub25lIiBzdHJva2U9IiM5QjAwRkYiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2Utb3BhY2l0eT0iMC4xIi8+PC9zdmc+')] opacity-20"></div>
+        
+        <div className="max-w-6xl mx-auto relative">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div className="transform hover:scale-105 transition-all duration-300">
+                <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
+                  <div className="w-8 h-8 bg-neon-purple/20 rounded-full flex items-center justify-center mr-3">
+                    <Sparkles className="w-5 h-5 text-neon-purple" />
+                  </div>
+                  Instant Rewards
+                </h3>
+                <p className="text-off-white">
+                  Get paid instantly in your preferred cryptocurrency. No waiting periods, no minimum balances.
+                </p>
+              </div>
+
+              <div className="transform hover:scale-105 transition-all duration-300">
+                <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
+                  <div className="w-8 h-8 bg-neon-purple/20 rounded-full flex items-center justify-center mr-3">
+                    <Gamepad2 className="w-5 h-5 text-neon-purple" />
+                  </div>
+                  Fun Tasks
+                </h3>
+                <p className="text-off-white">
+                  Complete engaging tasks, play games, and test new apps while earning crypto rewards.
+                </p>
+              </div>
+
+              <div className="transform hover:scale-105 transition-all duration-300">
+                <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
+                  <div className="w-8 h-8 bg-neon-purple/20 rounded-full flex items-center justify-center mr-3">
+                    <Lock className="w-5 h-5 text-neon-purple" />
+                  </div>
+                  Secure & Safe
+                </h3>
+                <p className="text-off-white">
+                  Your data and earnings are protected with enterprise-grade security measures.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="absolute inset-0 bg-neon-purple/20 rounded-2xl transform rotate-3"></div>
+              <div className="relative bg-black/50 border border-neon-purple p-8 rounded-2xl shadow-lg">
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-neon-purple/20 rounded-full flex items-center justify-center">
+                      <Bitcoin className="w-6 h-6 text-neon-purple" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold">Multi-Coin Support</h4>
+                      <p className="text-off-white text-sm">Choose from BTC, ETH, SOL, and more.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-neon-purple/20 rounded-full flex items-center justify-center">
+                      <Zap className="w-6 h-6 text-neon-purple" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold">Daily Rewards</h4>
+                      <p className="text-off-white text-sm">New tasks added every day</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-neon-purple/20 rounded-full flex items-center justify-center">
+                      <Shield className="w-6 h-6 text-neon-purple" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold">Teen-Friendly</h4>
+                      <p className="text-off-white text-sm">Designed specifically for young users</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
